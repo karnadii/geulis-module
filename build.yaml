@@ -3,6 +3,11 @@ include:
   - board: geulis
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
-    artifact-name: geulis-studio
+    artifact-name: geulis-zmk-studio
+  - board: geulis
+    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: geulis-zmk-logging
   - board: geulis
     shield: settings_reset
+    artifact-name: geulis-zmk-reset-settings
