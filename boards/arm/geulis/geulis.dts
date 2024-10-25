@@ -13,9 +13,9 @@
 #include "geulis-pinctrl.dtsi"
 #include "geulis-layout.dtsi"
 
-&default_layout {
+&no_split_backspace_layout {
     kscan = <&kscan0>;
-    transform = <&default_transform>;
+    transform = <&no_split_backspace_transform>;
 };
 
 &split_backspace_layout {
@@ -35,11 +35,10 @@
         zmk,battery = &vbatt;
         zmk,underglow = &led_strip;
         zmk,kscan = &kscan0;
-        // zmk,matrix-transform = &default_transform;
-        zmk,physical-layout = &default_layout; 
+        zmk,physical-layout = &split_backspace_layout; 
     };
 
-    default_transform: default_transform {
+    no_split_backspace_transform: no_split_backspace_transform {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <7>;
