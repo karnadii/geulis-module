@@ -1,4 +1,4 @@
-#include <physical_layouts.dtsi>
+Jim#include <physical_layouts.dtsi>
 
 / {
 
@@ -147,6 +147,22 @@
             , <&key_physical_attrs 150 100 1095  490 (-1200)   901    86>
             , <&key_physical_attrs 150 100 1595  413       0     0     0>
             ;
+    };
+
+position_map {
+        compatible = "zmk,physical-layout-position-map";
+
+        complete;
+
+        no_split_backspace_layout {
+            physical-layout = <&no_split_backspace_layout>;
+            positions = <14 65>;
+        };
+
+        split_backspace_layout {
+            physical-layout = <&split_backspace_layout>;
+            positions = <14 15>;
+        };
     };
 
     // geulis_position_map: geulis_position_map {
