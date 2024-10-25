@@ -1,0 +1,14 @@
+file_format: "1"
+id: geulis
+name: Geulis
+type: board
+arch: arm
+features:
+  - keys
+  - underglow
+  - studio
+
+outputs:
+  - usb
+  - ble
+url: https://github.com/karnadii/geulis
