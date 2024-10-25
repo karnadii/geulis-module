@@ -35,7 +35,7 @@
         zmk,battery = &vbatt;
         zmk,underglow = &led_strip;
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &split_backspace_layout; 
+        zmk,physical-layout = &no_split_backspace_layout; 
     };
 
     no_split_backspace_transform: no_split_backspace_transform {
