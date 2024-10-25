@@ -148,10 +148,9 @@
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
-        
+
         extra1 {
             status = "reserved";
-            bindings = <
             bindings = <
             #ifdef  SPLIT_BACKSPACE
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
