@@ -15,7 +15,7 @@
         #else
             &no_split_backspace_layout;
         #endif
-    }
+    };
 
     behaviors {
         bspc_del: bspc_del {
