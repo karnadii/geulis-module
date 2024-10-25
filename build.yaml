@@ -5,7 +5,9 @@ include:
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: geulis-zmk-studio
   - board: geulis
-    snippet: zmk-usb-logging
+    snippet: 
+      - zmk-usb-logging
+      - studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: geulis-zmk-logging
   - board: geulis
