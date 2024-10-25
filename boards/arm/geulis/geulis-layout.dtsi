@@ -1,4 +1,4 @@
-Jim#include <physical_layouts.dtsi>
+#include <physical_layouts.dtsi>
 
 / {
 
@@ -149,7 +149,7 @@ Jim#include <physical_layouts.dtsi>
             ;
     };
 
-position_map {
+    position_map {
         compatible = "zmk,physical-layout-position-map";
 
         complete;
