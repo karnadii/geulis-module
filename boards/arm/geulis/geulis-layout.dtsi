@@ -1,6 +1,7 @@
 #include <physical_layouts.dtsi>
 
 / {
+
     no_split_backspace_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default";
