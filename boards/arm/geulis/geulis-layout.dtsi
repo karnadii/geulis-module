@@ -311,7 +311,6 @@
 
     position_map {
         compatible = "zmk,physical-layout-position-map";
-        complete;
 
         no_split_backspace_split_shift_map {
             physical-layout = <&no_split_backspace_split_shift_layout>;
