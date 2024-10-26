@@ -9,7 +9,7 @@
 / {
 
     no_split_backspace_layout: default_layout {
-        compatible = "zmk,physical-layout";s
+        compatible = "zmk,physical-layout";
         display-name = "Default";
 
         keys  //                     w   h    x    y     rot    rx    ry
