@@ -1,9 +1,15 @@
+/*
+ * Copyright (c) 2024 Ujang Karnadi
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
 #include <physical_layouts.dtsi>
 
 / {
 
     no_split_backspace_layout: default_layout {
-        compatible = "zmk,physical-layout";
+        compatible = "zmk,physical-layout";s
         display-name = "Default";
 
         keys  //                     w   h    x    y     rot    rx    ry
