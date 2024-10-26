@@ -48,7 +48,7 @@
         zmk,physical-layout = &split_backspace_split_shift_layout; 
     };
 
-    no_split_backspace_split_shift_transform: transform {
+    no_split_backspace_split_shift_transform: transform0 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <7>;
@@ -62,7 +62,7 @@
         >;
     };
 
-    no_split_backspace_one_right_shift_transform: transform {
+    no_split_backspace_one_right_shift_transform: transform1 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <7>;
@@ -76,7 +76,7 @@
         >;
     };
 
-    split_backspace_split_shift_transform: transform {
+    split_backspace_split_shift_transform: transform2 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <7>;
@@ -90,7 +90,7 @@
         >;
     };
 
-    split_backspace_one_right_shift_transform: transform {
+    split_backspace_one_right_shift_transform: transform3 {
         compatible = "zmk,matrix-transform";
         columns = <10>;
         rows = <7>;

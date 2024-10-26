@@ -2,7 +2,7 @@
 
 / {
     // 2u Backspace with 1.75u right shift and 1u delete
-    no_split_backspace_split_shift_layout: layout {
+    no_split_backspace_split_shift_layout: layout0 {
         compatible = "zmk,physical-layout";
         display-name = "One Backspace Split Right Shift";
 
@@ -79,7 +79,7 @@
     };
 
     // 2u Backspace with 2.75u right shift
-    no_split_backspace_one_right_shift_layout: layout {
+    no_split_backspace_one_right_shift_layout: layout1 {
         compatible = "zmk,physical-layout";
         display-name = "One Backspace with One Right Shift";
 
@@ -155,7 +155,7 @@
     };
 
     // 1u backspace and 1u delete with 1.75u right shift and 1u delete
-    split_backspace_split_shift_layout: layout {
+    split_backspace_split_shift_layout: layout2 {
         compatible = "zmk,physical-layout";
         display-name = "Split Backspace and Split Right Shift";
 
@@ -233,7 +233,7 @@
     };
 
     // 1u backspace and 1u delete with one 2.75u right shift
-    split_backspace_one_right_shift_layout: layout {
+    split_backspace_one_right_shift_layout: layout3 {
         compatible = "zmk,physical-layout";
         display-name = "Split Backspace and One Right Shift";
 
