@@ -161,7 +161,7 @@
                 key-positions = <11 17>;
                 layers = <2 3>;
             };
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
