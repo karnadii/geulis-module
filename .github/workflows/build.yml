@@ -8,3 +8,10 @@ on:
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  release:
+    needs: build
+    uses: filterpaper/scripts/.github/workflows/publish-artifact.yml@main
+    with:
+      release_name: ZMK Firmware
+      release_tag: latest
