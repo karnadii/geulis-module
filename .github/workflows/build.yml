@@ -1,8 +1,11 @@
 on:
   push:
     paths:
+      - build.yaml
       - 'config/**'
       - 'boards/**'
+      - .github/workflows/build.yml
+
   workflow_dispatch:
 
 jobs:

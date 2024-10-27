@@ -6,6 +6,8 @@ on:
     paths:
       - "boards/arm/geulis/*.keymap"
       - "boards/arm/geulis/*.dtsi"
+      - .github/workflows/draw-keymaps.yml
+        
 
 jobs:
   draw:
