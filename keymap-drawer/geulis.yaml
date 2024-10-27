@@ -274,19 +274,25 @@ layers:
 combos:
 - p: [14, 32]
   k: '&studio_unlock'
-  l: [Functions]
+  l: [Functions, Settings]
+- p: [32, 24]
+  k: '&studio_unlock'
+  l: [Functions, Settings]
 - p: [50, 32]
   k: '&bootloader'
-  l: [Functions]
+  l: [Functions, Settings]
+- p: [32, 51]
+  k: '&bootloader'
+  l: [Functions, Settings]
 - p: [21, 32]
   k: '&sys_reset'
-  l: [Functions]
+  l: [Functions, Settings]
 - p: [34, 32]
   k: '&soft_off'
-  l: [Functions]
+  l: [Functions, Settings]
 - p: [27, 32]
   k: EP TOG
-  l: [Functions]
+  l: [Functions, Settings]
 - p: [25, 63]
   k: INSERT
   l: [Macos, Windows]
@@ -296,15 +302,9 @@ combos:
 - p: [27, 32]
   k: PAUSE BREAK
   l: [Macos, Windows]
-- p: [32, 51]
-  k: '&bootloader'
-  l: [Functions]
 - p: [32, 2]
   k: EP ON
   l: [Functions, Settings]
 - p: [32, 11]
   k: EP ON
   l: [Functions, Settings]
-- p: [32, 24]
-  k: '&studio_unlock'
-  l: [Functions]
