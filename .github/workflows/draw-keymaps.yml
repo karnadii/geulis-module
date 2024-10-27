@@ -15,8 +15,7 @@ jobs:
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
-      keymap_patterns: "boards/arm/geulis/*.keymap"        # path to the keymaps to parse
-      config_path: "keymap-drawer/geulis.yaml"  # config file, ignored if not exists
+      keymap_patterns: "boards/arm/geulis/*.keymap"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
       json_path: keymap-drawer/layouts
 
