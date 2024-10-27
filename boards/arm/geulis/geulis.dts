@@ -29,7 +29,6 @@
     transform = <&transform2>;
 };
 
-// One backspace and one right shift
 &layout3 {
     transform = <&transform3>;
 };
@@ -52,7 +51,6 @@
 
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
-        label = "KSCAN";
         diode-direction = "col2row";
         
         row-gpios
@@ -88,30 +86,24 @@
 
     top_encoder: encoder_top {
         compatible = "alps,ec11";
-        label = "TOP_ENCODER";
         a-gpios = <&gpio0 26 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
         steps = <80>;
         status = "okay";
     };
 
     mid_encoder: encoder_mid {
         compatible = "alps,ec11";
-        label = "MID_ENCODER";
         a-gpios = <&gpio0 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 27 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
         steps = <80>;
         status = "disabled";
     };
 
     bot_encoder: encoder_bot {
         compatible = "alps,ec11";
-        label = "BOT_ENCODER";
         a-gpios = <&gpio1 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <4>;
         steps = <80>;
         status = "disabled";
     };
