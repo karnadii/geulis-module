@@ -32,7 +32,7 @@ layers:
   - ']'
   - \
   - PAGE DOWN
-  - {t: CAPS, h: LCTRL}
+  - CAPS
   - A
   - S
   - D
@@ -99,7 +99,7 @@ layers:
   - ']'
   - \
   - PAGE DOWN
-  - {t: CAPS, h: LCTRL}
+  - CAPS
   - A
   - S
   - D
