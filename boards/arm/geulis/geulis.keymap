@@ -74,92 +74,94 @@
         MORPH(home_rst, &kp HOME, &sys_reset)
         MORPH(end_boot, &kp END, &bootloader)
     };
- combos {
-        compatible = "zmk,combos";
 
-        COMBO_UNLOCK_STUDIO {
-            timeout-ms = <50>;
-            bindings = <&studio_unlock>;
-            key-positions = <14 17>;
-            layers = <2 3>;
-        };
+    combos {
+            compatible = "zmk,combos";
 
-        COMBO_UNLOCK_STUDIO2 {
-            timeout-ms = <50>;
-            bindings = <&studio_unlock>;
-            key-positions = <24 17>;
-            layers = <2 3>;
-        };
+            COMBO_UNLOCK_STUDIO {
+                timeout-ms = <50>;
+                bindings = <&studio_unlock>;
+                key-positions = <14 17>;
+                layers = <2 3>;
+            };
 
-        COMBO_BOOTLOADER {
-            timeout-ms = <50>;
-            bindings = <&bootloader>;
-            key-positions = <50 17>;
-            layers = <2 3>;
-        };
+            COMBO_UNLOCK_STUDIO2 {
+                timeout-ms = <50>;
+                bindings = <&studio_unlock>;
+                key-positions = <24 17>;
+                layers = <2 3>;
+            };
 
-        COMBO_BOOTLOADER2 {
-            timeout-ms = <50>;
-            bindings = <&bootloader>;
-            key-positions = <51 17>;
-            layers = <2 3>;
-        };
+            COMBO_BOOTLOADER {
+                timeout-ms = <50>;
+                bindings = <&bootloader>;
+                key-positions = <50 17>;
+                layers = <2 3>;
+            };
 
-        COMBO_RESET {
-            timeout-ms = <50>;
-            bindings = <&sys_reset>;
-            key-positions = <21 17>;
-            layers = <2 3>;
-        };
+            COMBO_BOOTLOADER2 {
+                timeout-ms = <50>;
+                bindings = <&bootloader>;
+                key-positions = <51 17>;
+                layers = <2 3>;
+            };
 
-        COMBO_SHUTDOWN {
-            timeout-ms = <50>;
-            bindings = <&soft_off>;
-            key-positions = <34 17>;
-            layers = <2 3>;
-        };
+            COMBO_RESET {
+                timeout-ms = <50>;
+                bindings = <&sys_reset>;
+                key-positions = <21 17>;
+                layers = <2 3>;
+            };
 
-        COMBO_POWER {
-            timeout-ms = <50>;
-            bindings = <&ext_power EP_TOG>;
-            key-positions = <27 17>;
-            layers = <2 3>;
-        };
+            COMBO_SHUTDOWN {
+                timeout-ms = <50>;
+                bindings = <&soft_off>;
+                key-positions = <34 17>;
+                layers = <2 3>;
+            };
 
-        COMBO_INSERT {
-            timeout-ms = <50>;
-            bindings = <&kp INSERT>;
-            key-positions = <25 32>;
-            layers = <0 1>;
-        };
+            COMBO_POWER {
+                timeout-ms = <50>;
+                bindings = <&ext_power EP_TOG>;
+                key-positions = <27 17>;
+                layers = <2 3>;
+            };
 
-        COMBO_PRNTSCR {
-            timeout-ms = <50>;
-            bindings = <&kp PRINTSCREEN>;
-            key-positions = <27 32>;
-            layers = <0 1>;
-        };
+            COMBO_INSERT {
+                timeout-ms = <50>;
+                bindings = <&kp INSERT>;
+                key-positions = <25 32>;
+                layers = <0 1>;
+            };
 
-        COMBO_PAUSE_BREAK {
-            timeout-ms = <50>;
-            bindings = <&kp PAUSE_BREAK>;
-            key-positions = <27 18>;
-            layers = <0 1>;
-        };
+            COMBO_PRNTSCR {
+                timeout-ms = <50>;
+                bindings = <&kp PRINTSCREEN>;
+                key-positions = <27 32>;
+                layers = <0 1>;
+            };
 
-        COMBO_POWER_ON {
-            timeout-ms = <50>;
-            bindings = <&ext_power EP_ON>;
-            key-positions = <2 17>;
-            layers = <2 3>;
-        };
+            COMBO_PAUSE_BREAK {
+                timeout-ms = <50>;
+                bindings = <&kp PAUSE_BREAK>;
+                key-positions = <27 18>;
+                layers = <0 1>;
+            };
 
-        COMBO_POWER_OFF {
-            timeout-ms = <50>;
-            bindings = <&ext_power EP_ON>;
-            key-positions = <11 17>;
-            layers = <2 3>;
-        };
+            COMBO_POWER_ON {
+                timeout-ms = <50>;
+                bindings = <&ext_power EP_ON>;
+                key-positions = <2 17>;
+                layers = <2 3>;
+            };
+
+            COMBO_POWER_OFF {
+                timeout-ms = <50>;
+                bindings = <&ext_power EP_ON>;
+                key-positions = <11 17>;
+                layers = <2 3>;
+            };
+    }
 
     keymap {
         compatible = "zmk,keymap";
