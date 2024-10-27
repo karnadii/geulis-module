@@ -1,3 +1,7 @@
+layout: 
+  dts_layout: boards/arm/geulis/geulis-layout.dtsi
+  layout_name: split_backspace_split_shift_layout
+
 layers:
   macos:
   - MUTE
