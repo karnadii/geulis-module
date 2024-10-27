@@ -293,10 +293,10 @@ combos:
 - p: [27, 17]
   k: EP TOG
   l: [Functions, Settings]
-- p: [25, 17]
+- p: [25, 32]
   k: INSERT
   l: [Macos, Windows]
-- p: [27, 18]
+- p: [27, 32]
   k: PRINTSCREEN
   l: [Macos, Windows]
 - p: [27, 18]
