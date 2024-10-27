@@ -80,77 +80,75 @@
 
         COMBO_UNLOCK_STUDIO {
             bindings = <&studio_unlock>;
-            key-positions = <14 32>;
+            key-positions = <14 17>;
             layers = <2 3>;
         };
 
         COMBO_UNLOCK_STUDIO2 {
             bindings = <&studio_unlock>;
-            key-positions = <32 24>;
+            key-positions = <24 17>;
             layers = <2 3>;
         };
 
         COMBO_BOOTLOADER {
             bindings = <&bootloader>;
-            key-positions = <50 32>;
+            key-positions = <50 17>;
             layers = <2 3>;
         };
 
         COMBO_BOOTLOADER2 {
             bindings = <&bootloader>;
-            key-positions = <32 51>;
+            key-positions = <51 17>;
             layers = <2 3>;
         };
 
         COMBO_RESET {
             bindings = <&sys_reset>;
-            key-positions = <21 32>;
+            key-positions = <21 17>;
             layers = <2 3>;
         };
 
         COMBO_SHUTDOWN {
             bindings = <&soft_off>;
-            key-positions = <34 32>;
+            key-positions = <34 17>;
             layers = <2 3>;
         };
 
         COMBO_POWER {
             bindings = <&ext_power EP_TOG>;
-            key-positions = <27 32>;
+            key-positions = <27 17>;
             layers = <2 3>;
         };
 
         COMBO_INSERT {
             bindings = <&kp INSERT>;
-            key-positions = <25 63>;
+            key-positions = <25 17>;
             layers = <0 1>;
         };
 
         COMBO_PRNTSCR {
             bindings = <&kp PRINTSCREEN>;
-            key-positions = <27 63>;
+            key-positions = <27 18>;
             layers = <0 1>;
         };
 
         COMBO_PAUSE_BREAK {
             bindings = <&kp PAUSE_BREAK>;
-            key-positions = <27 32>;
+            key-positions = <27 18>;
             layers = <0 1>;
         };
 
         COMBO_POWER_ON {
             bindings = <&ext_power EP_ON>;
-            key-positions = <32 2>;
+            key-positions = <2 17>;
             layers = <2 3>;
         };
 
         COMBO_POWER_OFF {
             bindings = <&ext_power EP_ON>;
-            key-positions = <32 11>;
+            key-positions = <11 17>;
             layers = <2 3>;
         };
-
-        
     };
 
     keymap {
