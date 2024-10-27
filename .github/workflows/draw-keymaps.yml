@@ -16,5 +16,6 @@ jobs:
       keymap_patterns: "boards/arm/geulis/*.keymap"  # config file, ignored if not exists
       output_folder: "keymap-drawer"            # path to save produced SVG and keymap YAML files
       fail_on_error: true
-      draw_args: "geulis:'--dts-layout boards/arm/geulis/geulis-layout.dtsi --layout-name split_backspace_split_shift_layout'"
+      json_path: keymap-drawer/layouts
+    #   draw_args: "geulis:'--dts-layout boards/arm/geulis/geulis-layout.dtsi --layout-name split_backspace_split_shift_layout'"
 
