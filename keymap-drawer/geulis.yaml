@@ -259,7 +259,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&studio_unlock'
   - ''
   - ''
   - ''
@@ -272,39 +272,39 @@ layers:
   extra2: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
     '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
 combos:
-- p: [14, 32]
+- p: [14, 17]
   k: '&studio_unlock'
   l: [Functions, Settings]
-- p: [32, 24]
+- p: [24, 17]
   k: '&studio_unlock'
   l: [Functions, Settings]
-- p: [50, 32]
+- p: [50, 17]
   k: '&bootloader'
   l: [Functions, Settings]
-- p: [32, 51]
+- p: [51, 17]
   k: '&bootloader'
   l: [Functions, Settings]
-- p: [21, 32]
+- p: [21, 17]
   k: '&sys_reset'
   l: [Functions, Settings]
-- p: [34, 32]
+- p: [34, 17]
   k: '&soft_off'
   l: [Functions, Settings]
-- p: [27, 32]
+- p: [27, 17]
   k: EP TOG
   l: [Functions, Settings]
-- p: [25, 63]
+- p: [25, 17]
   k: INSERT
   l: [Macos, Windows]
-- p: [27, 63]
+- p: [27, 18]
   k: PRINTSCREEN
   l: [Macos, Windows]
-- p: [27, 32]
+- p: [27, 18]
   k: PAUSE BREAK
   l: [Macos, Windows]
-- p: [32, 2]
+- p: [2, 17]
   k: EP ON
   l: [Functions, Settings]
-- p: [32, 11]
+- p: [11, 17]
   k: EP ON
   l: [Functions, Settings]
