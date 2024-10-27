@@ -147,7 +147,7 @@
         COMBO_POWER_OFF {
             bindings = <&ext_power EP_ON>;
             key-positions = <32 11>;
-            layers = <2,3>;
+            layers = <2 3>;
         };
 
         
