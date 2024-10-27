@@ -1,3 +1,5 @@
+name: Build ZMK firmware
+
 on:
   push:
     paths:
@@ -7,6 +9,11 @@ on:
       - .github/workflows/build.yml
 
   workflow_dispatch:
+  schedule:
+    - cron: '0 10 * * *'
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -18,3 +25,7 @@ jobs:
     with:
       release_name: ZMK Firmware
       release_tag: latest
+
+  purge:
+    if: github.event_name == 'schedule'
+    uses: filterpaper/scripts/.github/workflows/purge-workflow.yml@main
