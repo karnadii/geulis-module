@@ -10,7 +10,7 @@ on:
 
   workflow_dispatch:
   schedule:
-    - cron: '0 10 * * *'
+    - cron: '0 10 * * 1'    # Runs at 10:00 UTC every Monday
 
 permissions:
   contents: write
