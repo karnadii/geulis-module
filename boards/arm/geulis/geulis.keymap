@@ -224,17 +224,17 @@
  *            '------'          '--------------------------'    '---------------------'                       '------'
  */
 
-        functions {
-            display-name = "Functions";
+         functions {
+            label = "Functions";
             bindings = <
-&pp_shut     &tilde_power    &f1           &f2           &f3           &f4           &f5           &f6      &f7    &f8     &f9       &f10      &f11       &f12   &rgb_ug RGB_TOG  &bt_clr_all
-&home_rst    &out OUT_TOG    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &none  &none   &kp UP    &none     &none      &none  &none            &rgb_ug RGB_EFF
-&end_boot    &studio_unlock  &none         &none         &none         &none         &none                         &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none            &tog 1
-             &kp LSHFT       &none         &none         &none         &none         &none                  &none  &none   &none     &none     &none      &none  &kp RSHFT        &bt_clr_all
-             &kp LCTRL                                   &trans        &trans        &none                  &none  &trans                                                         &kp RCTRL
+&pp_shut     &tilde_power  &f1           &f2           &f3           &f4           &f5           &f6      &f7    &f8     &f9       &f10      &f11             &f12        &rgb_ug RGB_TOG  &bt_clr_all
+&home_rst    &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &none  &none   &kp UP    &none     &kp PRINTSCREEN  &kp INSERT  &kp PAUSE_BREAK  &rgb_ug RGB_EFF
+&end_boot    &none         &none         &none         &none         &none         &none                         &none   &kp LEFT  &kp DOWN  &kp RIGHT        &none       &none            &tog 1
+             &kp LSHFT     &none         &none         &none         &none         &none                  &none  &none   &none     &none     &none            &none       &kp RSHFT        &bt_clr_all
+             &kp LCTRL                                 &trans        &trans        &none                  &none  &trans                                                                    &kp RCTRL
             >;
 
-            sensor-bindings = <&bt_encoder>;
+            sensor-bindings = <&rgb_encoder 0 0>;
         };
 /*
  * Settings:
