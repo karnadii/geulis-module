@@ -62,8 +62,8 @@ layers:
   - LCTRL
   - LALT
   - LGUI
-  - Settings
-  - {t: SPACE, h: Functions}
+  - Setting
+  - {t: SPACE, h: functions}
   - RGUI
   - RCTRL
   Windows:
@@ -129,12 +129,12 @@ layers:
   - LCTRL
   - LGUI
   - LALT
-  - Settings
-  - {t: SPACE, h: Functions}
+  - Setting
+  - {t: SPACE, h: functions}
   - RALT
   - RCTRL
-  Functions:
-  - {t: PP, s: '&soft_off'}
+  functions:
+  - '&PP_SHUT'
   - {t: '~', s: EP TOG}
   - {t: F1, s: BRI DN}
   - {t: F2, s: BRI UP}
@@ -148,10 +148,10 @@ layers:
   - {t: F10, s: MUTE}
   - {t: F11, s: VOL DN}
   - {t: F12, s: VOL UP}
-  - {t: OUT TOG, s: RGB TOG}
+  - RGB TOG
   - {t: BT CLR, s: BT CLR ALL}
-  - {t: HOME, s: '&sys_reset'}
-  - {t: BT NXT, s: RGB EFF}
+  - '&HOME_RST'
+  - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -164,8 +164,8 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - {t: END, s: '&bootloader'}
+  - RGB EFF
+  - '&END_BOOT'
   - ''
   - ''
   - ''
@@ -200,7 +200,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - RCTRL
-  Settings:
+  Setting:
   - '&soft_off'
   - EP TOG
   - BRI DEC
@@ -216,10 +216,14 @@ layers:
   - VOL DN
   - VOL UP
   - RGB TOG
-  - ''
+  - {t: BT CLR, s: BT CLR ALL}
   - '&sys_reset'
-  - RGB EFF
-  - RGB EFF
+  - OUT TOG
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
   - RGB BRI
   - RGB HUI
   - RGB SAI
@@ -227,14 +231,14 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - RGB EFF
   - '&bootloader'
   - ''
-  - RGB EFR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - RGB BRD
   - RGB HUD
   - RGB SAD
@@ -255,11 +259,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - '&studio_unlock'
+  - {t: BT CLR, s: BT CLR ALL}
   - ''
   - ''
   - ''
@@ -267,44 +267,162 @@ layers:
   - ''
   - ''
   - ''
-  extra1: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
-  extra2: ['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
-    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+  extra1:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  extra2:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
-- p: [14, 17]
+- p: [14, 32]
   k: '&studio_unlock'
-  l: [Functions, Settings]
-- p: [24, 17]
+- p: [24, 32]
   k: '&studio_unlock'
-  l: [Functions, Settings]
-- p: [50, 17]
+- p: [50, 32]
   k: '&bootloader'
-  l: [Functions, Settings]
-- p: [51, 17]
+- p: [51, 32]
   k: '&bootloader'
-  l: [Functions, Settings]
-- p: [21, 17]
+- p: [21, 32]
   k: '&sys_reset'
-  l: [Functions, Settings]
-- p: [34, 17]
+- p: [34, 32]
   k: '&soft_off'
-  l: [Functions, Settings]
-- p: [27, 17]
-  k: EP TOG
-  l: [Functions, Settings]
-- p: [25, 32]
-  k: INSERT
-  l: [Macos, Windows]
 - p: [27, 32]
+  k: EP TOG
+- p: [25, 17]
+  k: INSERT
+- p: [27, 17]
   k: PRINTSCREEN
-  l: [Macos, Windows]
-- p: [27, 18]
+- p: [27, 32]
   k: PAUSE BREAK
-  l: [Macos, Windows]
-- p: [2, 17]
+- p: [2, 32]
   k: EP ON
-  l: [Functions, Settings]
-- p: [11, 17]
+- p: [11, 32]
   k: EP ON
-  l: [Functions, Settings]
