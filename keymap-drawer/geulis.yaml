@@ -425,4 +425,4 @@ combos:
 - p: [2, 32]
   k: EP ON
 - p: [11, 32]
-  k: EP ON
+  k: EP OFF
