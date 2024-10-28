@@ -224,13 +224,8 @@
  *            '------'          '--------------------------'    '---------------------'                       '------'
  */
 
-<<<<<<< HEAD
-         functions {
-            label = "Functions";
-=======
         functions {
             display-name = "Functions";
->>>>>>> 5a22d319e4bf061326eaa9fa603f4c5d362bd8ec
             bindings = <
 &pp_shut     &tilde_power  &f1           &f2           &f3           &f4           &f5           &f6      &f7    &f8     &f9       &f10      &f11             &f12        &rgb_ug RGB_TOG  &bt_clr_all
 &home_rst    &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &none  &none   &kp UP    &none     &kp PRINTSCREEN  &kp INSERT  &kp PAUSE_BREAK  &rgb_ug RGB_EFF
