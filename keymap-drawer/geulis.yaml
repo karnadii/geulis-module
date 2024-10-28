@@ -62,8 +62,8 @@ layers:
   - LCTRL
   - LALT
   - LGUI
-  - Setting
-  - {t: SPACE, h: functions}
+  - Settings
+  - {t: SPACE, h: Functions}
   - RGUI
   - RCTRL
   Windows:
@@ -129,11 +129,11 @@ layers:
   - LCTRL
   - LGUI
   - LALT
-  - Setting
-  - {t: SPACE, h: functions}
+  - Settings
+  - {t: SPACE, h: Functions}
   - RALT
   - RCTRL
-  functions:
+  Functions:
   - {t: PP, s: '&soft_off'}
   - {t: '~', s: EP TOG}
   - {t: F1, s: BRI DN}
@@ -200,7 +200,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - RCTRL
-  Setting:
+  Settings:
   - '&soft_off'
   - EP TOG
   - BRI DEC
@@ -245,7 +245,7 @@ layers:
   - RGB SPD
   - ''
   - ''
-  - ''
+  - {t: Windows, h: toggle}
   - ''
   - ''
   - ''
