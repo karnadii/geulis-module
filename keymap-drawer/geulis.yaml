@@ -161,12 +161,12 @@ layers:
   - ''
   - UP
   - ''
-  - ''
-  - ''
-  - ''
+  - PRINTSCREEN
+  - INSERT
+  - PAUSE BREAK
   - RGB EFF
   - {t: END, s: '&bootloader'}
-  - '&studio_unlock'
+  - ''
   - ''
   - ''
   - ''
