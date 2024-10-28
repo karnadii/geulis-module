@@ -227,11 +227,11 @@
         functions {
             label = "Functions";
             bindings = <
-&pp_shut     &tilde_power  &f1           &f2           &f3           &f4           &f5           &f6      &f7    &f8     &f9       &f10      &f11       &f12   &rgb_ug RGB_TOG  &bt_clr_all
-&home_rst    &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &none  &none   &kp UP    &none     &none      &none  &none            &rgb_ug RGB_EFF
-&end_boot    &none         &none         &none         &none         &none         &none                         &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none            &tog 1
-             &kp LSHFT     &none         &none         &none         &none         &none                  &none  &none   &none     &none     &none      &none  &kp RSHFT        &bt_clr_all
-             &kp LCTRL                                 &trans        &trans        &none                  &none  &trans                                                         &kp RCTRL
+&pp_shut     &tilde_power    &f1           &f2           &f3           &f4           &f5           &f6      &f7    &f8     &f9       &f10      &f11       &f12   &rgb_ug RGB_TOG  &bt_clr_all
+&home_rst    &out OUT_TOG    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4           &none  &none   &kp UP    &none     &none      &none  &none            &rgb_ug RGB_EFF
+&end_boot    &studio_unlock  &none         &none         &none         &none         &none                         &none   &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none            &tog 1
+             &kp LSHFT       &none         &none         &none         &none         &none                  &none  &none   &none     &none     &none      &none  &kp RSHFT        &bt_clr_all
+             &kp LCTRL                                   &trans        &trans        &none                  &none  &trans                                                         &kp RCTRL
             >;
 
             sensor-bindings = <&bt_encoder>;
@@ -255,7 +255,7 @@
             bindings = <
 &soft_off      &ext_power EP_TOG  &kp C_BRI_DEC  &kp C_BRI_UP  &kp LG(TAB)   &kp LG(E)     &rgb_ug RGB_BRD  &rgb_ug RGB_BRI      &kp C_PREVIOUS   &kp C_PP         &kp C_NEXT       &kp C_MUTE       &kp C_VOL_DN     &kp C_VOL_UP  &rgb_ug RGB_TOG  &bt_clr_all
 &sys_reset     &out OUT_TOG       &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                          &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &none            &none         &none            &rgb_ug RGB_EFF
-&bootloader    &none              &none          &none         &none         &none         &none                                                  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &none         &none            &none
+&bootloader    &studio_unlock     &none          &none         &none         &none         &none                                                  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &none         &none            &none
                &none              &none          &none         &none         &none         &none                                 &none            &none            &none            &none            &none            &none         &none            &bt_clr_all
                &none                                           &none         &none         &none                                 &none            &none                                                                                              &none
             >;

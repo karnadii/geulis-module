@@ -166,7 +166,7 @@ layers:
   - ''
   - RGB EFF
   - {t: END, s: '&bootloader'}
-  - ''
+  - '&studio_unlock'
   - ''
   - ''
   - ''
@@ -233,7 +233,7 @@ layers:
   - ''
   - RGB EFF
   - '&bootloader'
-  - ''
+  - '&studio_unlock'
   - ''
   - ''
   - ''
