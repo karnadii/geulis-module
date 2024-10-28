@@ -134,7 +134,7 @@ layers:
   - RALT
   - RCTRL
   functions:
-  - '&PP_SHUT'
+  - {t: PP, s: '&soft_off'}
   - {t: '~', s: EP TOG}
   - {t: F1, s: BRI DN}
   - {t: F2, s: BRI UP}
@@ -150,7 +150,7 @@ layers:
   - {t: F12, s: VOL UP}
   - RGB TOG
   - {t: BT CLR, s: BT CLR ALL}
-  - '&HOME_RST'
+  - {t: HOME, s: '&sys_reset'}
   - OUT TOG
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -165,7 +165,7 @@ layers:
   - ''
   - ''
   - RGB EFF
-  - '&END_BOOT'
+  - {t: END, s: '&bootloader'}
   - ''
   - ''
   - ''
