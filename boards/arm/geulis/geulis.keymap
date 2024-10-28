@@ -134,7 +134,7 @@
 
         COMBO_PAUSE_BREAK {
             bindings = <&kp PAUSE_BREAK>;
-            key-positions = <27 32>;
+            key-positions = <17 63>;
             // layers = <0 1>;
         };
 

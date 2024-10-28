@@ -420,7 +420,7 @@ combos:
   k: INSERT
 - p: [27, 17]
   k: PRINTSCREEN
-- p: [27, 32]
+- p: [17, 63]
   k: PAUSE BREAK
 - p: [2, 32]
   k: EP ON
