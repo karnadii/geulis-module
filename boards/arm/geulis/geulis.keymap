@@ -74,7 +74,7 @@
         MORPH(home_rst, &kp HOME, &sys_reset)
         MORPH(end_boot, &kp END, &bootloader)
     };
-    
+
     combos {
         compatible = "zmk,combos";
 
@@ -145,7 +145,7 @@
         };
 
         COMBO_POWER_OFF {
-            bindings = <&ext_power EP_ON>;
+            bindings = <&ext_power EP_OFF>;
             key-positions = <11 32>;
             // layers = <2 3>;
         };
