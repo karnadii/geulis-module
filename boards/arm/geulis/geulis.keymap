@@ -173,6 +173,8 @@
         win_sleep: win_sleep {
             label = "WIN_SLEEP";
             compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -181,7 +183,6 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp R &kp U &kp N &kp D &kp L &kp L &kp N3 &kp N2>,
                 <&macro_tap>,
@@ -205,6 +206,8 @@
         win_shutdown: win_shutdown {
             label = "WIN_SHUTDOWN";
             compatible = "zmk,behavior-macro";
+            wait-ms = <40>;
+            tap-ms = <40>;
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
@@ -213,7 +216,6 @@
                 <&kp R>,
                 <&macro_release>,
                 <&kp LGUI>,
-                <&macro_wait_time 100>,
                 <&macro_tap>,
                 <&kp S &kp H &kp U &kp T &kp D &kp O &kp W &kp N>,
                 <&macro_tap>,
