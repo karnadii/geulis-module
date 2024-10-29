@@ -36,6 +36,12 @@
     };
 
 
+&caps_word {
+    continue-list = <UNDERSCORE MINUS>;
+};
+
+
+
 / {
 
     
@@ -74,6 +80,7 @@
         MORPH(home_rst, &kp HOME, &sys_reset)
         MORPH(end_boot, &kp END, &bootloader)
         MORPH(pp_mute, &kp C_MUTE, &kp C_PP)
+        MORPH(caps_word_caps, &caps_word, &kp CAPS)
     };
 
     combos {
@@ -150,6 +157,80 @@
             key-positions = <11 32>;
             // layers = <2 3>;
         };
+
+        COMBO_WIN_SHUTDOWN {
+            bindings = <&win_shutdown>;
+            key-positions = <61 63 27>;
+        };
+
+        COMBO_WIN_SLEEP {
+            bindings = <&win_sleep>;
+            key-positions = <61 63 34>;
+        };
+    };
+
+    macros {
+        win_sleep: win_sleep {
+            label = "WIN_SLEEP";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
+                <&kp R &kp U &kp N &kp D &kp L &kp L &kp N3 &kp N2>,
+                <&macro_tap>,
+                <&kp DOT &kp E &kp X &kp E>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp P &kp O &kp W &kp R &kp P &kp R &kp O &kp F>,
+                <&macro_tap>,
+                <&kp DOT &kp D &kp L &kp L>,
+                <&macro_tap>,
+                <&kp COMMA>,
+                <&macro_tap>,
+                <&kp S &kp E &kp T &kp S &kp U &kp S &kp P &kp E &kp N &kp D &kp S &kp T &kp A &kp T &kp E>,
+                <&macro_tap>,
+                <&kp SPACE &kp N0 &kp COMMA &kp N1 &kp COMMA &kp N0>,
+                <&macro_tap>,
+                <&kp RET>;
+        };
+
+        win_shutdown: win_shutdown {
+            label = "WIN_SHUTDOWN";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LGUI>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LGUI>,
+                <&macro_wait_time 100>,
+                <&macro_tap>,
+                <&kp S &kp H &kp U &kp T &kp D &kp O &kp W &kp N>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp FSLH &kp S>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp FSLH &kp T>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_tap>,
+                <&kp N0>,
+                <&macro_tap>,
+                <&kp RET>;
+        };
     };
 
     keymap {
@@ -173,11 +254,11 @@
         macos {
             display-name = "Macos";
             bindings = <
-&pp_mute         &gresc          &kp N1  &kp N2  &kp N3    &kp N4    &kp N5  &kp N6      &kp N7       &kp N8    &kp N9  &kp N0     &kp MINUS  &kp EQUAL  &bspc_del  &kp DEL
-&kp PAGE_UP      &kp TAB         &kp Q   &kp W   &kp E     &kp R     &kp T               &kp Y        &kp U     &kp I   &kp O      &kp P      &kp LBKT   &kp RBKT   &kp BACKSLASH
-&kp PAGE_DOWN    &kp CAPS        &kp A   &kp S   &kp D     &kp F     &kp G                            &kp H     &kp J   &kp K      &kp L      &kp SEMI   &kp SQT    &kp RET
-                 &kp LSHFT       &kp Z   &kp X   &kp C     &kp V     &kp B               &kp B        &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT  &kp DEL
-                 &kp LCTRL                       &kp LALT  &kp LGUI  &mo 3               &lt 2 SPACE  &kp RGUI                                                      &kp RCTRL
+&pp_mute         &gresc             &kp N1  &kp N2  &kp N3    &kp N4    &kp N5  &kp N6      &kp N7       &kp N8    &kp N9  &kp N0     &kp MINUS  &kp EQUAL  &bspc_del  &kp DEL
+&kp PAGE_UP      &kp TAB            &kp Q   &kp W   &kp E     &kp R     &kp T               &kp Y        &kp U     &kp I   &kp O      &kp P      &kp LBKT   &kp RBKT   &kp BACKSLASH
+&kp PAGE_DOWN    &caps_word_caps    &kp A   &kp S   &kp D     &kp F     &kp G                            &kp H     &kp J   &kp K      &kp L      &kp SEMI   &kp SQT    &kp RET
+                 &kp LSHFT          &kp Z   &kp X   &kp C     &kp V     &kp B               &kp B        &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT  &kp DEL
+                 &kp LCTRL                          &kp LALT  &kp LGUI  &mo 3               &lt 2 SPACE  &kp RGUI                                                      &kp RCTRL
             >;
 
             sensor-bindings = <&media_encoder>;
@@ -201,11 +282,11 @@
         windows {
             display-name = "Windows";
             bindings = <
-&pp_mute         &gresc          &kp N1  &kp N2  &kp N3    &kp N4    &kp N5  &kp N6      &kp N7       &kp N8    &kp N9  &kp N0     &kp MINUS  &kp EQUAL  &bspc_del  &kp DEL
-&kp PAGE_UP      &kp TAB         &kp Q   &kp W   &kp E     &kp R     &kp T               &kp Y        &kp U     &kp I   &kp O      &kp P      &kp LBKT   &kp RBKT   &kp BACKSLASH
-&kp PAGE_DOWN    &kp CAPS        &kp A   &kp S   &kp D     &kp F     &kp G                            &kp H     &kp J   &kp K      &kp L      &kp SEMI   &kp SQT    &kp RET
-                 &kp LSHFT       &kp Z   &kp X   &kp C     &kp V     &kp B               &kp B        &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT  &kp DEL
-                 &kp LCTRL                       &kp LGUI  &kp LALT  &mo 3               &lt 2 SPACE  &kp RALT                                                      &kp RCTRL
+&pp_mute         &gresc            &kp N1  &kp N2  &kp N3    &kp N4    &kp N5  &kp N6      &kp N7       &kp N8    &kp N9  &kp N0     &kp MINUS  &kp EQUAL  &bspc_del  &kp DEL
+&kp PAGE_UP      &kp TAB           &kp Q   &kp W   &kp E     &kp R     &kp T               &kp Y        &kp U     &kp I   &kp O      &kp P      &kp LBKT   &kp RBKT   &kp BACKSLASH
+&kp PAGE_DOWN    &caps_word_caps   &kp A   &kp S   &kp D     &kp F     &kp G                            &kp H     &kp J   &kp K      &kp L      &kp SEMI   &kp SQT    &kp RET
+                 &kp LSHFT         &kp Z   &kp X   &kp C     &kp V     &kp B               &kp B        &kp N     &kp M   &kp COMMA  &kp DOT    &kp FSLH   &kp RSHFT  &kp DEL
+                 &kp LCTRL                         &kp LGUI  &kp LALT  &mo 3               &lt 2 SPACE  &kp RALT                                                      &kp RCTRL
             >;
 
             sensor-bindings = <&media_encoder>;

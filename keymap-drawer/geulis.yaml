@@ -32,7 +32,7 @@ layers:
   - ']'
   - \
   - PAGE DOWN
-  - CAPS
+  - {t: '&caps_word', s: CAPS}
   - A
   - S
   - D
@@ -99,7 +99,7 @@ layers:
   - ']'
   - \
   - PAGE DOWN
-  - CAPS
+  - {t: '&caps_word', s: CAPS}
   - A
   - S
   - D
@@ -426,3 +426,7 @@ combos:
   k: EP ON
 - p: [11, 32]
   k: EP OFF
+- p: [61, 63, 27]
+  k: '&win_shutdown'
+- p: [61, 63, 34]
+  k: '&win_sleep'
