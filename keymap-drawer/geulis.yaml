@@ -1,6 +1,6 @@
 layers:
   Macos:
-  - MUTE
+  - {t: MUTE, s: PP}
   - {t: ESC, s: '`'}
   - '1'
   - '2'
@@ -67,7 +67,7 @@ layers:
   - RGUI
   - RCTRL
   Windows:
-  - MUTE
+  - {t: MUTE, s: PP}
   - {t: ESC, s: '`'}
   - '1'
   - '2'
